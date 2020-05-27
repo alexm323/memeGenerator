@@ -1,0 +1,48 @@
+body {
+	background-color: black;
+	color: white;
+	box-sizing: border-box;
+}
+.container {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#meme-holder {
+	background-color: grey;
+	height: 500px;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: space-around;
+}
+.new-meme {
+	width: 500px;
+	height: 500px;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.meme-text-top {
+	font-size: xx-large;
+	align-self: flex-start;
+
+	width: 100%;
+}
+.meme-text-bottom {
+	font-size: xx-large;
+	align-self: flex-end;
+
+	width: 100%;
+}
+
+.completed {
+	color: red;
+	text-decoration: line-through;
+	text-shadow: 5px 5px 5px black;
+}
