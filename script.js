@@ -8,8 +8,11 @@ const removeBtn = document.getElementById('removeBtn');
 memeForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 	makeMemeArray(imageURL.value, topText.value, bottomText.value);
-	console.log(meme);
+
 	makeMemeDiv(meme);
+	imageURL.value = '';
+	topText.value = '';
+	bottomText.value = '';
 });
 
 let makeMemeArray = (image, top, bottom) => {

@@ -5,28 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Let's make some Memes</h1>
-        <h3>Stand Back! I am about to do science</h3>
+        <h1>Meme-o-matic</h1>
+
         <form action="" id="meme-form">
-            <p>Image URL</p>
-            <input type="text" id = "image-link" value="https://i.kym-cdn.com/entries/icons/original/000/031/831/cover2.jpg">
-            <p>Top Text</p>
-            <input type="text" id="top-text" value="This is what happens">
-            <p>Bottom Text</p>
-            <input type="text" id="bottom-text" value="When you play Sonic Adventures">
+            <label for="imageLink">Image URL</label>
+            <input name="imageLink" type="text" id = "image-link" value="https://www.unilad.co.uk/wp-content/uploads/2018/07/success-kid-original-828x550.jpg">
+            <br>
+
+            <label for="topTextLabel">Top Text</label>
+            <input name="topTextLabel" type="text" id="top-text" value="Try to make a meme maker">
+            <br>
+
+            <label for="bottomTextLabel">Bottom Text</label>
+            <input name="bottomTextLabel" type="text" id="bottom-text" value="Ayy it works">
             
-            <button type="submit">Meme-ify</button>
+            <button type="submit">Unleash the Meme</button>
         </form>
         <hr>
-        <button id="removeBtn">Send Meme to Shadow Realm
+        <button id="removeBtn">Destroy Selected Meme
         </button>
             <div id="meme-holder">
 
             </div>
     </div>
+    <footer>Photo by Alex Beaz on Unsplash</footer>
 
     <script src="script.js"></script>
 </body>
